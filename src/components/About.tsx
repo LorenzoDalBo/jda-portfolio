@@ -1,27 +1,8 @@
-import { Award, Users, Lightbulb } from 'lucide-react';
 
-const teamMembers = [
-  {
-    name: 'João Silva',
-    role: 'CEO & Fundador',
-    image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-  },
-  {
-    name: 'Maria Santos',
-    role: 'CTO',
-    image: 'https://images.pexels.com/photos/3807446/pexels-photo-3807446.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-  },
-  {
-    name: 'Carlos Oliveira',
-    role: 'Head de Projetos',
-    image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-  },
-  {
-    name: 'Ana Costa',
-    role: 'Diretora de Inovação',
-    image: 'https://images.pexels.com/photos/3772523/pexels-photo-3772523.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-  },
-];
+import squareImage1 from '../assets/square-img1.jpg';
+import squareImage2 from '../assets/square-img2.jpg';
+
+
 
 export function About() {
   return (
@@ -47,7 +28,7 @@ export function About() {
     {/* Primeiro Quadrado (Verde) */}
     <div className="h-64 rounded-xl overflow-hidden">
       <img 
-        src="./src/assets/square-img1.jpg" 
+        src={squareImage1} 
         alt="Descrição da imagem" 
         className="w-full h-full object-cover"
       />
@@ -56,7 +37,7 @@ export function About() {
     {/* Segundo Quadrado (Cinza) */}
     <div className="h-64 rounded-xl overflow-hidden mt-8">
       <img 
-        src="./src/assets/square-img2.jpg" 
+        src={squareImage2} 
         alt="Descrição da imagem" 
         className="w-full h-full object-cover"
       />

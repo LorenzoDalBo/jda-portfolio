@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Navigation() {
             <div className="flex items-center">
   <a href="/" className="flex items-center">
     <img 
-      src="./src/assets/logo.jpg" 
+      src={logo} 
       alt="JDA Soluções em Tecnologia" 
       className="h-16 w-auto object-contain transition-transform hover:scale-105" 
     />

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import heroImage from '../assets/hero-img.png';
 
 export function Hero() {
   return (
@@ -53,7 +54,7 @@ export function Hero() {
               
               <div className="relative">
                 <img
-                  src="./src/assets/hero-img.png" // Substitua pelo nome correto do arquivo
+                  src={heroImage}
                   alt="Dashboard de Tecnologia"
                   className="rounded-lg opacity [mask-image:linear-gradient(to_right,black_90%,transparent_100%)]"
                 />
