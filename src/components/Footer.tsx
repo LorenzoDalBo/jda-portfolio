@@ -9,20 +9,20 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent mb-4">
-              JDA'soluções
+              JDA Soluções
             </h3>
             <p className="text-gray-400">
-              Transformando ideias em soluções digitais inovadoras desde 2014.
+              Soluções em Tecnologia
             </p>
           </div>
 
           <div>
             <h4 className="font-bold mb-4">Serviços</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#services" className="hover:text-primary-400 transition-colors">Infraestrutura em Nuvem</a></li>
-              <li><a href="#services" className="hover:text-primary-400 transition-colors">Desenvolvimento</a></li>
-              <li><a href="#services" className="hover:text-primary-400 transition-colors">Segurança</a></li>
-              <li><a href="#services" className="hover:text-primary-400 transition-colors">Consultoria</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">Suporte Especializado</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">Roteamento</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">Rede wi-fi mesh</a></li>
+              <li><a href="#services" className="hover:text-primary-400 transition-colors">Consultoria Tecnológica</a></li>
             </ul>
           </div>
 
@@ -32,27 +32,10 @@ export function Footer() {
               <li><a href="#about" className="hover:text-primary-400 transition-colors">Sobre Nós</a></li>
               <li><a href="#portfolio" className="hover:text-primary-400 transition-colors">Portfólio</a></li>
               <li><a href="#contact" className="hover:text-primary-400 transition-colors">Contato</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Blog</a></li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-4">Redes Sociais</h4>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Linkedin size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Twitter size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Github size={24} />
-              </a>
-            </div>
-          </div>
+          
         </div>
 
         <div className="border-t border-gray-800 pt-8">

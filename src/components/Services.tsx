@@ -1,35 +1,35 @@
-import { Cloud, Shield, Zap, Database, Users, TrendingUp } from 'lucide-react';
+import { Users, TrendingUp, HeadsetIcon, RouterIcon, WifiIcon, ServerIcon, BoxIcon } from 'lucide-react';
 
 const services = [
   {
-    icon: Cloud,
-    title: 'Infraestrutura em Nuvem',
-    description: 'Migração e gerenciamento de infraestrutura em nuvem com segurança e escalabilidade garantidas.',
+    icon: HeadsetIcon,
+    title: 'Suporte Especializado',
+    description: 'Nosso suporte vai além do técnico. Oferecemos atendimento remoto e presencial rápido e eficiente, profissionais especializados, comunicação clara e humanizada, com foco na resolução definitiva dos problemas',
   },
   {
-    icon: Shield,
-    title: 'Segurança da Informação',
-    description: 'Proteção completa de dados e sistemas com soluções de segurança de classe empresarial.',
+    icon: RouterIcon,
+    title: 'Roteamento',
+    description: 'Garantimos roteamento inteligente e seguro para manter sua empresa sempre conectada. Configuramos e gerenciamos equipamentos com foco em estabilidade, desempenho e segurança, priorizando tráfego, reduzindo falhas e evitando interrupções na operação.',
   },
   {
-    icon: Zap,
-    title: 'Desenvolvimento de Software',
-    description: 'Aplicações web e mobile customizadas para suas necessidades de negócio.',
+    icon: WifiIcon,
+    title: 'Rede wi-fi mesh',
+    description: 'Implantamos redes Wi-Fi Mesh de alta performance, garantindo cobertura total e sinal estável em todos os ambientes. Ideal para empresas que precisam de mobilidade, produtividade e conexão contínua, sem quedas ou pontos de sombra.',
   },
   {
-    icon: Database,
-    title: 'Big Data & Analytics',
-    description: 'Análise avançada de dados para tomadas de decisão mais inteligentes.',
+    icon: ServerIcon,
+    title: 'Equipamentos em comodato',
+    description: 'Disponibilizamos equipamentos modernos e atualizados em regime de comodato, reduzindo investimento inicial e custos com manutenção. Sua empresa conta com tecnologia sempre atualizada e substituição rápida quando necessário.',
   },
   {
     icon: Users,
     title: 'Consultoria Tecnológica',
-    description: 'Orientação estratégica para transformação digital da sua empresa.',
+    description: 'Analisamos sua infraestrutura e processos para propor soluções estratégicas e personalizadas. Nossa consultoria é focada em eficiência, redução de custos, segurança da informação e crescimento sustentável do seu negócio.',
   },
   {
-    icon: TrendingUp,
-    title: 'Otimização de Performance',
-    description: 'Melhoria contínua de sistemas e processos para máxima eficiência.',
+    icon: BoxIcon,
+    title: 'Rede Estruturada',
+    description: 'Projetamos e implementamos redes estruturadas organizadas, seguras e preparadas para expansão. Trabalhamos com cabeamento profissional, identificação técnica e padrão de qualidade que garante desempenho, estabilidade e facilidade de manutenção.',
   },
 ];
 
@@ -39,10 +39,10 @@ export function Services() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nossos Serviços
+            Nossos diferenciais
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Oferecemos soluções tecnológicas completas para impulsionar seu negócio
+            Oferecemos soluções tecnológicas para sua empresa ir além do convencial. Projetamos a sua rede para ter o melhor desempenho, estabilidade e segurança, atendendo às necessidades específicas para o seu negocio.
           </p>
         </div>
 
@@ -52,13 +52,13 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="p-8 border border-gray-200 rounded-xl hover:shadow-lg hover:border-primary-300 transition-all duration-300 group cursor-pointer"
+                className="p-8 border justify-items-center  border-gray-200 rounded-xl hover:shadow-lg hover:border-primary-300 transition-all duration-300 group cursor-pointer"
               >
-                <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
+                <div className="w-14  h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
                   <Icon className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <p className="text-gray-600 text-center leading-relaxed">{service.description}</p>
               </div>
             );
           })}

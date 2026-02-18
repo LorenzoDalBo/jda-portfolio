@@ -30,66 +30,42 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Sobre a JDA'soluções
+              Sobre a JDA Soluções
             </h2>
             <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-              Com mais de uma década de experiência, a JDA'soluções é líder em transformação digital e soluções tecnológicas inovadoras. Nossa missão é ajudar empresas a alcançar seus objetivos através da tecnologia inteligente.
+              A JDA Soluções atua no setor de tecnologia oferecendo serviços especializados em infraestrutura, conectividade e suporte técnico. Fundada em 2016, a empresa entrega soluções seguras, eficientes e personalizadas, ajudando negócios a manterem alta performance e estabilidade em suas operações.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Trabalhamos com empresas de todos os tamanhos, desde startups até grandes corporações, entregando soluções customizadas que geram resultados mensuráveis.
+              Nosso compromisso é transformar a tecnologia em uma aliada estratégica, garantindo segurança, continuidade e crescimento para nossos clientes.
             </p>
 
-            <div className="space-y-4">
-              <div className="flex gap-4">
-                <Award className="text-primary-600 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Excelência Reconhecida</h3>
-                  <p className="text-gray-600">Premiados por inovação e qualidade em soluções tecnológicas</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Users className="text-primary-600 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Equipe Experiente</h3>
-                  <p className="text-gray-600">Profissionais certificados e com expertise em múltiplas tecnologias</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Lightbulb className="text-primary-600 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Inovação Contínua</h3>
-                  <p className="text-gray-600">Sempre atualizados com as tecnologias e tendências mais recentes</p>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           <div className="hidden md:block">
             <div className="grid grid-cols-2 gap-4">
-              <div className="h-64 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl"></div>
-              <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mt-8"></div>
-            </div>
+    {/* Primeiro Quadrado (Verde) */}
+    <div className="h-64 rounded-xl overflow-hidden">
+      <img 
+        src="square-img1.jpg" 
+        alt="Descrição da imagem" 
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Segundo Quadrado (Cinza) */}
+    <div className="h-64 rounded-xl overflow-hidden mt-8">
+      <img 
+        src="square-img2.jpg" 
+        alt="Descrição da imagem" 
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 pt-16">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Nossa Equipe</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="text-center group cursor-pointer">
-                <div className="relative mb-4 overflow-hidden rounded-lg h-64">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <h4 className="text-lg font-bold text-gray-900">{member.name}</h4>
-                <p className="text-primary-600 font-semibold">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  
       </div>
     </section>
   );

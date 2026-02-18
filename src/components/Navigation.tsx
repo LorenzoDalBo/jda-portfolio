@@ -15,11 +15,17 @@ export function Navigation() {
   return (
     <nav className="fixed w-full bg-white shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
-              JDA'soluções
-            </h1>
+            <div className="flex items-center">
+  <a href="/" className="flex items-center">
+    <img 
+      src="/logo.jpg" 
+      alt="JDA Soluções em Tecnologia" 
+      className="h-16 w-auto object-contain transition-transform hover:scale-105" 
+    />
+  </a>
+</div>
           </div>
 
           <div className="hidden md:flex gap-8">
