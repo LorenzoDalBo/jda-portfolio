@@ -47,7 +47,7 @@ export function About() {
     {/* Primeiro Quadrado (Verde) */}
     <div className="h-64 rounded-xl overflow-hidden">
       <img 
-        src="./square-img1.jpg" 
+        src="./src/assets/square-img1.jpg" 
         alt="Descrição da imagem" 
         className="w-full h-full object-cover"
       />
@@ -56,7 +56,7 @@ export function About() {
     {/* Segundo Quadrado (Cinza) */}
     <div className="h-64 rounded-xl overflow-hidden mt-8">
       <img 
-        src="./square-img2.jpg" 
+        src="./src/assets/square-img2.jpg" 
         alt="Descrição da imagem" 
         className="w-full h-full object-cover"
       />
