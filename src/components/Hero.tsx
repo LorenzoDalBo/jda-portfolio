@@ -53,7 +53,7 @@ export function Hero() {
               
               <div className="relative">
                 <img
-                  src="hero-img.png" // Substitua pelo nome correto do arquivo
+                  src="./hero-img.png" // Substitua pelo nome correto do arquivo
                   alt="Dashboard de Tecnologia"
                   className="rounded-lg opacity [mask-image:linear-gradient(to_right,black_90%,transparent_100%)]"
                 />

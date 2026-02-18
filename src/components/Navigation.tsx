@@ -20,7 +20,7 @@ export function Navigation() {
             <div className="flex items-center">
   <a href="/" className="flex items-center">
     <img 
-      src="/logo.jpg" 
+      src="./logo.jpg" 
       alt="JDA Soluções em Tecnologia" 
       className="h-16 w-auto object-contain transition-transform hover:scale-105" 
     />
