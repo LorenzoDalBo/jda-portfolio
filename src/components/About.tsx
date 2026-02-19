@@ -1,6 +1,6 @@
 
-import squareImage1 from '../assets/square-img1.jpg';
-import squareImage2 from '../assets/square-img2.jpg';
+import squareImage1 from '../assets/square-img1.jpeg';
+
 
 
 
@@ -24,9 +24,9 @@ export function About() {
           </div>
 
           <div className="hidden md:block">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="gap-4">
     {/* Primeiro Quadrado (Verde) */}
-    <div className="h-64 rounded-xl overflow-hidden">
+    <div className=" rounded-xl overflow-hidden">
       <img 
         src={squareImage1} 
         alt="Descrição da imagem" 
@@ -35,13 +35,7 @@ export function About() {
     </div>
 
     {/* Segundo Quadrado (Cinza) */}
-    <div className="h-64 rounded-xl overflow-hidden mt-8">
-      <img 
-        src={squareImage2} 
-        alt="Descrição da imagem" 
-        className="w-full h-full object-cover"
-      />
-    </div>
+ 
   </div>
           </div>
         </div>
