@@ -96,7 +96,7 @@ export function Contact() {
           <div className="bg-white p-8 rounded-xl justify-items-center shadow-md ">
             <MapPin className="text-primary-600 mb-4" size={32} />
             <h3 className="text-lg font-bold text-center text-gray-900 mb-2">Localização</h3>
-            <p className="text-gray-600 text-center">Cricima, SC - Brasil</p>
+            <p className="text-gray-600 text-center">Criciúma, SC - Brasil</p>
           </div>
         </div>
 
