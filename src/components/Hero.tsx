@@ -2,6 +2,20 @@ import { ArrowRight } from "lucide-react";
 import heroImage from '../assets/hero-img.png';
 
 export function Hero() {
+  // 1. Função para interceptar o clique e rolar suavemente
+  const handleScroll = (e) => {
+    e.preventDefault(); // Evita que o "#services" vá para a URL
+    
+    const targetElement = document.getElementById('services'); // Busca a seção pelo ID
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth', // Rolagem suave
+        block: 'start'      // Alinha ao topo
+      });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -26,7 +40,12 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#services" className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors flex items-center justify-center gap-2">
+              {/* 2. Adicionado o evento onClick aqui na tag <a> */}
+              <a 
+                href="#services" 
+                onClick={handleScroll}
+                className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors flex items-center justify-center gap-2"
+              >
                 Nossos diferenciais <ArrowRight size={20} />
               </a>
             </div>

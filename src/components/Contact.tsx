@@ -52,7 +52,7 @@ export function Contact() {
             Entre em Contato
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Vamos transformar seu negócio. Fale com nossos especialistas hoje.
+            Vamos transformar seu negócio. Fale com nossos especialistas hoje
           </p>
         </div>
 
