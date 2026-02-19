@@ -7,8 +7,7 @@ export function Navigation() {
 
   const navItems = [
     { label: 'Início', href: '#home' },
-    { label: 'Serviços', href: '#services' },
-    { label: 'Portfólio', href: '#portfolio' },
+    { label: 'Diferenciais', href: '#services' },
     { label: 'Sobre', href: '#about' },
     { label: 'Contato', href: '#contact' },
   ];

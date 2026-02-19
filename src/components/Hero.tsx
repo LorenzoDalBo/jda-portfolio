@@ -26,16 +26,16 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors flex items-center justify-center gap-2">
-                Nossas soluções <ArrowRight size={20} />
-              </button>
+              <a href="#services" className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors flex items-center justify-center gap-2">
+                Nossos diferenciais <ArrowRight size={20} />
+              </a>
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary-600">10+ Anos</p>
+                <p className="text-3xl font-bold text-primary-600">10+</p>
                 <p className="text-sm text-gray-600">
-                  Transformando Tecnologia{" "}
+                  Anos Transformando Tecnologia{" "}
                 </p>
               </div>
               <div className="text-center">
@@ -50,15 +50,12 @@ export function Hero() {
           </div>
 
           <div className="hidden md:block">
-            <div className="relative">
-              
-              <div className="relative">
-                <img
-                  src={heroImage}
-                  alt="Dashboard de Tecnologia"
-                  className="rounded-lg opacity [mask-image:linear-gradient(to_right,black_90%,transparent_100%)]"
-                />
-              </div>
+            <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-xl [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]">
+              <img
+                src={heroImage}
+                alt="Dashboard de Tecnologia"
+                className="absolute inset-0 w-full h-full object-cover object-right rounded-lg [mask-image:linear-gradient(to_right,black_90%,transparent_100%)]"
+              />
             </div>
           </div>
         </div>

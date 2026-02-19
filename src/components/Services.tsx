@@ -1,10 +1,10 @@
-import { Users, TrendingUp, HeadsetIcon, RouterIcon, WifiIcon, ServerIcon, BoxIcon } from 'lucide-react';
+import { Users, TrendingUp, HeadsetIcon, RouterIcon, WifiIcon, ServerIcon, BoxIcon, CogIcon, Handshake } from 'lucide-react';
 
 const services = [
   {
     icon: HeadsetIcon,
     title: 'Suporte Especializado',
-    description: 'Nosso suporte vai além do técnico. Oferecemos atendimento remoto e presencial rápido e eficiente, profissionais especializados, comunicação clara e humanizada, com foco na resolução definitiva dos problemas',
+    description: 'Nosso suporte vai além do técnico. Oferecemos atendimento remoto e presencial eficiente, profissionais especializados, comunicação clara e humanizada, com foco na resolução definitiva dos problemas.',
   },
   {
     icon: RouterIcon,
@@ -17,7 +17,7 @@ const services = [
     description: 'Implantamos redes Wi-Fi Mesh de alta performance, garantindo cobertura total e sinal estável em todos os ambientes. Ideal para empresas que precisam de mobilidade, produtividade e conexão contínua, sem quedas ou pontos de sombra.',
   },
   {
-    icon: ServerIcon,
+    icon: Handshake,
     title: 'Equipamentos em comodato',
     description: 'Disponibilizamos equipamentos modernos e atualizados em regime de comodato, reduzindo investimento inicial e custos com manutenção. Sua empresa conta com tecnologia sempre atualizada e substituição rápida quando necessário.',
   },
@@ -42,7 +42,7 @@ export function Services() {
             Nossos diferenciais
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Oferecemos soluções tecnológicas para sua empresa ir além do convencial. Projetamos a sua rede para ter o melhor desempenho, estabilidade e segurança, atendendo às necessidades específicas para o seu negocio.
+            Oferecemos soluções tecnológicas para sua empresa ir além do convencial.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function Services() {
                   <Icon className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 text-center leading-relaxed">{service.description}</p>
+                <p className="text-gray-600 text-center text-sm leading-relaxed">{service.description}</p>
               </div>
             );
           })}

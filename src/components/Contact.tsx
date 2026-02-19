@@ -57,11 +57,14 @@ export function Contact() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white p-8 rounded-xl justify-items-center shadow-md">
-            <Mail className="text-primary-600 mb-4" size={32} />
-            <h3 className="text-lg font-bold text-center text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-600 text-center">comercial@solucoesjda.com.br</p>
-          </div>
+          <a 
+    href="mailto:comercial@solucoesjda.com.br"
+    className="bg-white p-8 rounded-xl justify-items-center shadow-md block cursor-pointer "
+  >
+    <Mail className="text-primary-600 mb-4 mx-auto" size={32} />
+    <h3 className="text-lg font-bold text-center text-gray-900 mb-2">Email</h3>
+    <p className="text-gray-600 text-center">comercial@solucoesjda.com.br</p>
+  </a>
 
           <div className="bg-white p-8 rounded-xl justify-items-center shadow-md flex flex-col items-center">
   <Phone className="text-primary-600 mb-4" size={32} />
@@ -77,7 +80,7 @@ export function Contact() {
       (48) 99929-2499
     </a>
     
-    <span className="mx-1 text-gray-400">+</span>
+    <span className="mx-1 text-gray-400"> </span>
     
     <a 
       href="https://wa.me/5548988441925" 
