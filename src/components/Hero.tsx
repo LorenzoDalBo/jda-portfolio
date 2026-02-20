@@ -58,7 +58,7 @@ export function Hero() {
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary-600">50+</p>
+                <p className="text-3xl font-bold text-primary-600">150+</p>
                 <p className="text-sm text-gray-600">Contratos Ativos</p>
               </div>
               <div className="text-center">
