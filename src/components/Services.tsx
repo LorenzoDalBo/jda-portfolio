@@ -52,13 +52,13 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="p-8 border justify-items-center  border-gray-200 rounded-xl hover:shadow-lg hover:border-primary-300 transition-all duration-300 group cursor-pointer"
+                className="p-8 border border-gray-200 rounded-xl hover:shadow-lg hover:border-primary-300 transition-all duration-300 group cursor-pointer flex flex-col items-center text-center"
               >
-                <div className="w-14  h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
+                <div className="w-14 h-14 shrink-0 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
                   <Icon className="text-primary-600" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 text-center text-sm leading-relaxed">{service.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
               </div>
             );
           })}
